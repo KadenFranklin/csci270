@@ -1,0 +1,46 @@
+	Primitive shapes:
+		one or more other shapes
+		
+			startshape house
+
+			shape house {
+			  SQUARE [hue 30 saturation .5 brightness .5]
+			  TRIANGLE [y .75 size 1.5 1 h 120 sat .8 b .9]
+			}
+			
+			startshape spike
+
+			shape spike {
+				SQUARE [brightness 0.5]
+				spike [x 0.5 size 0.95]
+			}
+			
+			can use x,y,z to move shapes, r to rotate them
+			
+			how do you do a loop:
+				startshape pattern1
+
+				shape pattern1 {
+				  loop 6 [r 60] TRIANGLE [y .2 h 60 sat 1.0 b 1.0]
+				}
+				startshape pattern2
+
+				shape pattern2 {
+				  loop 6 [r 60 h 30 sat 1 b 1] TRIANGLE [y .2]
+				}
+			
+			How to rotate a shape more in depth:
+			startshape flower
+ 
+				shape flower {
+					// petals
+					CIRCLE [[ r  30 x 0.5 s 1 0.25 ]]
+					CIRCLE [[ r  90 x 0.5 s 1 0.25 ]]
+					CIRCLE [[ r 150 x 0.5 s 1 0.25 ]]
+					CIRCLE [[ r 210 x 0.5 s 1 0.25 ]]
+					CIRCLE [[ r 270 x 0.5 s 1 0.25 ]]
+					CIRCLE [[ r 330 x 0.5 s 1 0.25 ]]
+					//center
+					CIRCLE [ s 0.25 b 1 ]
+				}
+
