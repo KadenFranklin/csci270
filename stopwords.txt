@@ -1,0 +1,13 @@
+import gensim
+from gensim.models import word2vec as w2v
+from nltk.corpus import stopwords
+
+sw = stopwords.words('english')
+def no_stopwords(tokens: List[str]) -> List[str]:
+    return [token for token in tokens if token not in sw]
+def clean_file(file_in: str, file_out: str):
+    text_lines = open(file_in).read().lower().split('\n')
+    cleaned_lines = [no_stopwords(all_tokens_from(line)) for line in text_lines]
+    with open(file_out, 'w') as out:
+        for line in cleaned_lines:
+            out.write(f"{' '.join(line)}\n")
