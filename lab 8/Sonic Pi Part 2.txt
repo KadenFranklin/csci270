@@ -1,0 +1,28 @@
+notes = scale :G, :major
+prog = [chord(:G, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:E, :minor), chord(:D, :major), chord(:C, :major), chord(:G, :major), chord(:E, :minor), chord(:D, :major), chord(:C, :major), chord(:G, :major)]
+
+2.times do
+  notes.length().times do |i|
+    sample :ambi_choir, notes[i], attack: 1, sustain: 0.5
+    sleep 1
+  end
+  notes.length().times do |i|
+    sample :ambi_choir, notes[i], attack: 1, sustain: 0.5
+    synth :piano, note: prog[i], attack: 0.3, sustain: 0.6
+    sleep 1
+  end
+  notes.length().times do |i|
+    sample :ambi_choir, notes[i], attack: 1, sustain: 0.5
+    synth :piano, note: prog[i], attack: 0.3, sustain: 0.6
+    sample :ambi_glass_rub, notes[i], attack: 0.2, sustain: 0.75
+    sleep 1
+  end
+  notes.length().times do |i|
+    sample :loop_mika, attack: 1, sustain: 0.5
+    sample :ambi_choir, notes[i], attack: 1, sustain: 0.5
+    synth :piano, note: prog[i], attack: 0.3, sustain: 0.6
+    sample :ambi_glass_rub, notes[i], attack: 0.2, sustain: 0.75
+    sleep 1
+  end
+  
+end

@@ -1,0 +1,6 @@
+notes = scale :G, :major
+prog = [chord(:G, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:G, :major), chord(:C, :minor), chord(:D, :major), chord(:E, :minor), chord(:D, :major), chord(:C, :major), chord(:G, :major), chord(:E, :minor), chord(:D, :major), chord(:C, :major), chord(:G, :major)]
+prog.length().times do |i|
+  synth :piano, note: prog[i], attack: 0.3, sustain: 0.6
+  sleep 1
+end
