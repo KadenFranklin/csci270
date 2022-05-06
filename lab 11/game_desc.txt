@@ -1,0 +1,103 @@
+The novel will pretty much follow the story of the opening tutorial of fallout new vegas.
+The game is set in a postapocalyptic america.
+You awake in an amnesiac state at a doctors house in a town called goodsprings.
+You are in the middle of the Mojave desert. A fabled city called New Vegas exists nearby.
+The people in this new town call you Courier, they say a man took something from you.
+You don't remember much but you feel obliged to help the people in this town with their problems before going on your way.
+
+There are basically three possible endings to the novel
+
+	1. the courier leaves goodsprings to the west and gets attacked by deathclaws.
+	2. the courier leaves goodsprings to the east and gets attacked by gang.
+	3. the courier stays in goodsprings to help fight the gang and fails semi-heroically
+	4. the courier leaves goodsprings to the east, having already assisting the town 
+	and avoiding further conflict. 
+
+
+	The challenge that the protagonist must overcome is helping the town defeat the local gang
+	There are multiple different objectives the protagonist can complete such as:
+		Get Pete's dynamite
+		Enlist ringo's assistance.
+		Learn survival skills/ combat training from sonny
+		Steal from doctors house
+		Buy goods from the general store.
+	None of these objectives by themselves will help the town defeat the gang.
+	I am going to implement a counter to have the player meet 3/5 objectives before
+	being able to defeat the gang.
+
+
+	Doctor - the man who saved your life. You don't know much about him, he seems nice enough.
+	Saved you from a gunshot wound and didn't ask for a penny. 
+
+	Pete- Local old person, and maybe town drunk. Anyways you know one thing he has weird hobbies.
+
+	Ringo- Something like local law enforcement? A Robot, a human trapped in a robot?
+	IDK I wish this was the weirdest thing about this town.
+
+	General Store Merchant- just a merchant. Very useful in the actual game just thought I'd include it
+
+	Bartender- serves to give character information, also sonny's mother i think.
+
+	Sunny- local survivalist, can train character in combat before having to fight the gang, or not.
+
+The anticipated decision points for the novel:
+	You wake up and talk to the doctor.
+	
+	a. take all his things and leave
+	b. leave immediately.
+	
+	Then once outside you are confronted by ringo.
+	He informs you somewhat of you past and calls you courier.
+	He also tells you of the gang nearby the town.
+	Maybe even tells you about some monsters.
+	Then you have many decisions
+	
+	a. Go to Saloon
+	b. Go to General Store
+	c. Leave town to the east
+	d. Leave town to the west
+	(e. Go back to doc's house)
+	
+	No matter what the character does, if they leave town to the west, then they will perish to deathclaws.
+	
+	If the character leaves town to the east, they will only survive if they have completed 3/5 objectives.
+	
+	If the character goes to the saloon, which will unlock information/options to visit:
+		Sonny,
+		Get dynamite from pete,
+		Enlist help from ringo.
+	(Really the saloon is the only place the character needs to visit to succeed)
+		From saloon:
+			a'.  Talk to Sonny
+			a''. Talk to Pete
+			a. Go to General Store
+			b. Go to doc's house
+			c. Leave town to east
+			d. Leave town to west
+	
+	If the character goes to the general store, and has already stolen from the doctor,
+	They can get equipment from the store to help fight the gang.
+		From general store:
+			a. Go to Saloon
+			b. Go to doc's house
+			c. Leave town to the east
+			d. Leave town to the west
+	
+	Talking to pete will simply give the character dynamite.
+	They will remain in the saloon, and have one less option.
+	
+	Talking to sonny will take the character to 'kill' geckos or whatever
+	They will return to the saloon shortly afterward.(With one less option) 
+	
+	Returning to the doc's house will allow the player to take all of his things again.
+	If they have already done this the only thing they will be able to do upon returning to his house is talk to ringo.
+	
+	
+	comments: Good game, good storyline, maybe try to use fallout style music if possible?
+	Also maybe an option for using a stealth boy to 
+	
+	comments: Sounds well thought out, main thing is just making the aesthetic with the music and 
+	visuals work wit the story
+	
+	I like the idea of having them complete x amount of the task and not having to do all 5 but may be having the certain task 
+	be the ones that count towards that total so theres for sure one set way to get the best outcome.
